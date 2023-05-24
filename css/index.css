@@ -1,0 +1,84 @@
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/helvetica/Helvetica.ttf") format("truetype");
+}
+
+.link {text-decoration: none;}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #7a7880;
+  border-radius: 6px;
+}
+
+
+body {
+    background-image: url("../images/fond.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+div.corp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+}
+
+div.header h1 {
+    font-family:"Helvetica",sans-serif;
+    font-size: 5vw;
+    color: #7a7880;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+div.center a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.center img {
+  margin-left: 50px;
+  max-width: 64%;
+}
+
+div.navbar {
+  display: flex;
+  flex-direction: column;
+  padding:10px
+}
+
+.navbar a {
+  font-family: "Helvetica",sans-serif;
+  font-size: 2vw;
+  text-decoration: none;
+  color:#7a7880;
+  transition: font-size 0.2s ease;
+}
+.navbar a:hover {
+  font-size: 2.2vw;
+}
+
+@media (max-width: 767px) {
+
+  div.header h1 {
+    text-align: center;
+    font-size: 8vw;
+  }
+
+  .navbar a {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+  }
+  .navbar a:hover {
+    font-size: 5vw;
+  }
+}
