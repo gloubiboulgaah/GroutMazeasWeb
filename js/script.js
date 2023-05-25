@@ -31,3 +31,16 @@ function parallaxIt(target, movement) {
 $(window).on('resize scroll', function(){
   rect = $('#container')[0].getBoundingClientRect();
 })
+
+const changeBtn = document.getElementById('boutton_poppi');
+const image = document.getElementById('poppi');
+
+changeBtn.addEventListener('click', function() {
+if (image.getAttribute('src') === '../images/poppi.jpg') {
+    image.setAttribute('src', '../images/surf.png');
+    image.setAttribute('alt', 'Image 2');
+} else {
+    image.setAttribute('src', '../images/poppi.jpg');
+    image.setAttribute('alt', 'Image 1');
+}
+});
